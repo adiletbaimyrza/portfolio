@@ -24,8 +24,13 @@ jobs:
           node-version: 20 # Adjust the Node.js version if needed
           cache: "pnpm" # Enable pnpm cache
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@8.0.0 --activate
+
+      - name: Verify pnpm version
+        run: pnpm --version
 
       - name: Install dependencies
         run: pnpm install
