@@ -33,17 +33,12 @@ const work = await Promise.all(
 );
 
 const ABOUT = {
-  EXPERIENCE: 2,
-  TECHNOLOGIES: ["React", "Angular", "Node.js"],
+  EXPERIENCE: "more than a",
+  TECHNOLOGIES: ["React", "Next.js", "Node.js"],
   CURRENT_COMPANY: {
     NAME: "Godel Technologies",
     LINK: "https://www.godeltech.com",
     ARIA: "Godel Technologies",
-  },
-  PREVIOUS_COMPANY: {
-    NAME: "EPAM Systems",
-    LINK: "https://www.epam.com",
-    ARIA: "EPAM Systems",
   },
   UNIVERSITY: {
     NAME: "University of Lodz",
@@ -63,44 +58,63 @@ const ABOUT = {
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am a Software Engineer with {ABOUT.EXPERIENCE} years of experience
-            developing web applications using
+            I am a Software Engineer with {ABOUT.EXPERIENCE} year of experience developing
+            web applications using
             {
               ABOUT.TECHNOLOGIES.map((tech, index, array) => {
                 return index === array.length - 1 ? (
-                  <>and {tech}.</>
+                  <>and {tech}, to name just a few.</>
                 ) : (
                   <>{tech}, </>
                 );
               })
-            } Currently, I work at
+            } I started my career as an intern at
             <Link
               href={ABOUT.CURRENT_COMPANY.LINK}
               aria-label={ABOUT.CURRENT_COMPANY.ARIA}
               external
             >
               {ABOUT.CURRENT_COMPANY.NAME}
-            </Link> and previously worked at
-            <Link
-              href={ABOUT.PREVIOUS_COMPANY.LINK}
-              aria-label={ABOUT.PREVIOUS_COMPANY.ARIA}
-              external
-            >
-              {ABOUT.PREVIOUS_COMPANY.NAME}
-            </Link>. I hold a B.Sc in Computer Science from the <Link
+            </Link>, and in the span of a year, managed to become first a
+            Junior, and then a Middle Software Engineer, thanks to my unwavering
+            professionalism. I hold a B.Sc in Computer Science from the <Link
               href={ABOUT.UNIVERSITY.LINK}
               aria-label={ABOUT.UNIVERSITY.ARIA}
               external
             >
               {ABOUT.UNIVERSITY.NAME}
-            </Link>, where I studied algorithms, data structures, and databases.
+            </Link>, where I gained a strong foundation in algorithms, data
+            structures, and databases.
           </p>
           <p class="animate">
-            I specialize in developing user interfaces, converting Figma designs
-            into UI components, providing performance and latency optimizations,
-            and integrating backend systems with frontend. I'm always open to
-            discussing new opportunities and projects where I can contribute and
-            help.
+            I develop and design user interfaces, converting Figma designs into
+            UI components, not only making them architecturally scalable, but
+            also providing performance, speed, and accessibility. I also have an
+            experience in integrating API services with frontend applications.
+          </p>
+          <p class="animate">
+            I am passionate about the automation of laborious processes:
+            building tools, establishing protocols, improving developer
+            experience, etc. Besides that, I build my own tools in my free time.
+            Here's one of my latest projects: an AI-powered translating tool for
+            multilinguals with an integrated
+            <Link
+              href="https://en.wikipedia.org/wiki/Spaced_repetition"
+              aria-label="Wikipedia page on Spaced Repetition"
+              external
+            >
+              spaced repetition technique
+            </Link> for learning new words, <Link
+              href="https://lingogpt-nine.vercel.app"
+              aria-label="Link to LingoGPT: AI-powered translating tool"
+              external
+            >
+              LingoGPT
+            </Link>.
+          </p>
+          <p class="animate">
+            I'm always open to discussing new opportunities and projects where I
+            can contribute and help.
           </p>
           <p class="animate">
             Visit
