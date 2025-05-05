@@ -1,7 +1,7 @@
 ---
 title: "clines"
 description: "clines is a micro-package that counts the actual number of LOC in your project, and updates your README with the results. It also categorizes your project based on its size."
-date: "Feb 26 2025"
+date: "Apr 5 2025"
 demoURL: "https://www.npmjs.com/package/clines"
 repoURL: "https://github.com/adiletbaimyrza/clines"
 ---
