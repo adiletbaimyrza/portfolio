@@ -6,7 +6,7 @@ demoURL: "https://www.npmjs.com/package/eslint-plugin-no-duplicate-declarations"
 repoURL: "https://github.com/adiletbaimyrza/eslint-plugin-no-duplicate-declarations"
 ---
 
-ESLint plugin to detect duplicate declaration names across files in your TypeScript/JavaScript projects.
+ESLint plugin to detect duplicate declaration names across files in your TypeScript/JavaScript projects. I don't think this plugin needs an explanation, but I'll add a little story about it. My friend was trying to figure out a bug for 3 days, it turned out that the project had two classes with identical names that were different in design, and people were using the wrong classes. This plugin solves exactly those kind of problems.
 
 ## Installation
 
